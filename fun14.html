@@ -1,0 +1,28 @@
+<!--example on js functions-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>fun ex14</title>
+        <script>
+            var array = new Array();
+            function addItem() // Adding data to an array
+            {
+                array.push(t1.value);  //unshfit, shift =>FIFO
+                alert("Done !!!");
+                t1.value=""; //reset text 
+                t1.focus(); //cursor
+
+            }
+            function viewItems() // retriving data from an array
+            {
+                document.write("list of items:<br>", array.join("<br>"));
+            }
+        </script>
+    </head>
+    <body>
+        <label> Enter value to add array</label><br>
+        <input type="text" id="t1"> <br>
+        <button onclick="addItem()"> AddItem</button> &nbsp;&nbsp;
+        <button onclick="viewItems()">viewItems</button> &nbsp;&nbsp;
+    </body>
+</html>

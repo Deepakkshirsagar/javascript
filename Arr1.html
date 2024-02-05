@@ -1,0 +1,38 @@
+<!-- example on javascript -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>ArraysEx1</title>
+ </head>
+ <body>
+     <h2> Demo on Arrays</h2>
+     <script>
+         // 1st Approach
+         let a=[];
+         a[0]=12;
+         a[1]=23;
+         a[2]=43;
+         document.write("Array =>"+ a + "<br>");
+         document.write("Size => " + a.length + "<br>");
+         document.write("a[0] =>" +a[0] + "<br>");
+         document.write("a[1] =>"+a[1] + "<br>");
+         document.write("a[2] =>"+a[2] + "<br>");
+         
+         //array initialization
+         var runs = [4,10,8,15,1,8]; // it represents runs
+         let total=0;
+
+         for(i=0; i<runs.length; i++){
+             document.write("over "+ (i+1) + " : "+runs[i] + "<br>");
+             total=total+runs[i];
+         }
+         document.write("total Runs : "+total+"<br>");
+         document.write("overs : "+ runs.length +"<br>");
+
+    
+
+
+
+     </script>
+ </body>
+</html> 

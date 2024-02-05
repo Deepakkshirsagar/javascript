@@ -1,0 +1,44 @@
+
+ 
+ <!--exmaple on functions-->
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <title>fun ex11</title>
+         <script>
+             //An explicit check for being undefined(1st Approach before JS6)
+             function show1(name,msg)
+             {
+                 if(name===undefined)
+                 {
+                     name = "none";
+                 }
+                 if (msg === undefined)
+                 {
+                     msg = 'no text given';
+                 }
+                 document.write(name + ":" +msg + "<br>");
+             }
+             function show2(name, msg)
+             {
+                // if text is no value then gets the "default" value (2nd Approach)
+                name = name || 'none';
+                msg = msg || 'no text given';
+                document.write(name + ":" + msg + "<br>");
+             }
+         </script>
+     </head>
+     <body>
+         <h2> Demo on Default parameters old-style(beforre JS6</h2>
+         <script>
+             show1("Deepak", "What's Going on");
+             show1("kshirsagar");
+             show1();
+
+             //calling
+             show2("Ram" ,"what's up");
+             show2("pawar");
+             show2();
+         </script>
+     </body>
+ </html>

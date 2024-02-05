@@ -1,0 +1,27 @@
+<!--Global (outer)varibles
+Any variable is declared outsite a function or in open area (inside <script>) is called as global variable.
+A global variable is visible/accessible all over program-->
+<!--DOCTYPE HTML-->
+<html lang="en">
+    <head>
+        <title>fun ex4</title>
+    </head>
+    <body>
+        <h2>Demo on global variables </h2>
+        <script>
+            let username = 'Deeepak'; //global varibles
+            function showMessage()
+            {
+                //local variables
+                var st ='hello';
+                st=st+username; // valid
+                document.write(st,"<br>");
+            }
+        </script>
+
+        <script>
+            showMessage(); //hello,Deepak
+            document.write("Hi "+username);
+        </script>
+    </body>
+</html>

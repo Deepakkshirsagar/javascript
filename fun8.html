@@ -1,0 +1,29 @@
+<!--Exxample on javascript function-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>fun ex8</title>
+        <script>
+            function showMessage(from,text) // formal arguments
+            {
+                from='*' + from + '*'; //modified of FA
+                document.write(from + ':' + text);
+            }
+        </script>
+        </head>
+        <body>
+            <h2> Demo on parameters</h2>
+            <script>
+                let from="Deepak"; //primitive datatypes
+                let text="Hello";
+                document.write(from + "<br>"); //AA
+                showMessage(from, text); //calling with copy of Aa
+                // the value of "from" is the same, the function modified a ocal copy
+                 document.write("<br>"+from); //AA                                             
+            </script>
+        </body>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!--example on javascript math calculator-->
+<!DOCTYPE htnl>
+<html lang="en">
+    <body>
+        <h2>Math calculator--</h2>
+        <label>First Number</label><br>
+        <input type="text" id="firstNum"><br>
+        <label>Second number</label><br>
+        <input type="text" id="secNum"><br>
+        <button onclick="result.value='Addition : '+(parseInt(firstNum.value)+parseInt(secNum.value))"> Add </button>
+        <button onclick="result.value='Substract :'+(firstNum.value-secNum.value)">Sub</button>
+        <button onclick="result.value='product :'+firstNum.value*secNum.value">prod</button>
+        <button onclick="result.value='Division :'+firstNum.value/secNum.value">Div</button>
+        <button onclick="result.value='Rem : '+firstNum.value%secNum.value"> Mod </button>
+        <button onclick="result.value='power :'+firstNum.value**secNum.value">Pow</button>
+        <br> <br>
+        <output id="result"></output>
+    </body>
+</html>

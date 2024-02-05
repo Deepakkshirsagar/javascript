@@ -1,0 +1,27 @@
+<!--If a same-named variable is declared is inside the function then it shadows the outer one
+For ex, in the code below the function uses the local username.
+the outer one is ingnored-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>fun ex5</title>
+    </head>
+    <body> 
+        <h2> Demo on shadowing</h2>
+        <script>
+            //var n=100;  //outer
+            window.n=100;
+
+            function showmessage()
+            {
+                let n =200; //local variables (shadow)
+                document.write("N =>" +n +"<br>"); //it is always substitues local (shadow)
+                document.write(n*12, "<br>");
+                document.write("N =>" + window.n +"<br>"); //it always substitues outer
+            }
+            showmessage();
+            document.write("N"+ n+ "<br>");
+
+        </script>
+    </body>
+</html>

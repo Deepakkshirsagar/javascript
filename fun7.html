@@ -1,0 +1,27 @@
+<!--Exxample on javascript function-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>fun ex7</title>
+        <script>
+            function showMessage(from, text) //arguments: from,text,(formal)
+            {
+                //alert(from + ': '+ text);
+                document.write(from + " : " + text+ "<br>");
+            }
+            function myfun()
+            {
+                let a="Ram";
+                let b="Whats's up?";
+                showMessage(a,b); //calling2 (a,b are actual arguments)
+            }
+        </script>
+    </head>
+    <body>
+        <h2> Demo on arguments</h2>
+        <script>
+            showMessage('Deeepak','Hello!'); //calling 1
+            myfun()
+        </script>
+    </body>
+</html>

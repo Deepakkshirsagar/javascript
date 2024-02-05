@@ -1,0 +1,18 @@
+<!--example on javascript Array-->
+<html>
+    <h1>--example on Array of Array</h1>
+    <script>
+        var a=[ [11,22], [10,20],[12,33] ];  //Assume 2D
+        document.write(a +"<br>");
+         document.write(a.length +"<br>"); //no.of inner array (it retuns no.of cols)
+
+         for( i=0; i<=2;i++)// outer array (row index)
+         {
+             for(j=0; j<=2; j++); //inner array (col index)
+             {
+                 document.write(a[i][j] +"&nbsp;&nbsp");
+             }
+             document.write("<br>");
+         }
+    </script>
+</html>

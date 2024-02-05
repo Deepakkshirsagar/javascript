@@ -1,0 +1,38 @@
+<!--examle on javascript simple calculator-->
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h2>Simple Interest Calc</h2>
+        <label>Principle Amount</label><br>
+        <input type="text" id="pamt"><br>
+        <label>Rate of Interest</label><br>
+        <select id="roi">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+            <option value="9.5">9.5</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <label>Time</label><br>
+        <input type="=text" id="time"><br>
+        <button onclick="compute()">Cal Interest</button>
+
+        <script>
+             function compute()
+             {
+                 //call values from UI
+                 let p=pamt.value;
+                 let r=roi.value;
+                 let t=time.value;
+                 let si=p*t*r/100;
+                 alert("simple interest Amount: "+si);
+             }
+        </script>
+    </body>
+</html>

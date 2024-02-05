@@ -1,0 +1,33 @@
+<!--example on array methods-->
+<html>
+   <h2>Example on deleting ,updating & inserting element</h2>
+   <script>
+       var colors= ["Red", "Green","Blue"]; //initialization
+       document.write(colors +"<br>");
+       /* splice => it removes elements
+                               =>it inserting eles
+                               => it updates eles */
+    let x=colors.splice(0,1); //Removes the 0th ele(starting -pos, no .of elements)
+    document.write(x +"<br>"); //del elements
+    document.write("After del => "+ colors + "<br>");// balnced elements
+
+    var a=[10,20,30,40,50,60,70];
+    document.write("A "+a + "<br>");
+    var remdata= a.splice(2,3); //Removes 2,3,4 ele's
+    document.write("A after del =>" +a +"<br>");
+    document.write("Remele " +remdata +"<br>");
+
+    var colors= ["Grren","Blue", "Red","Cyan"]
+    colors.splice(2,0,"pink"); //it not removes any element but inser pink @2 position
+    document.write("after inserting =>" +colors+"<br>");
+    colors.splice(0, 0, "Black", "Yellow"); // it also inserts both element @0 position
+    document.write("after inserting =>" +colors + "<br>");
+
+    // //colors = [Black,Yellow,Green,Blue,Pink,Red,Cyan]
+
+    temp=colors.splice(1,2,"Purple","voilet");//it removes 1,2 ele's & insert "purple","voilet"
+    document.write("After update =>" +colors +"<br>");
+    document.write(temp + "<br>");
+   </script>
+    
+</html>

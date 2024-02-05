@@ -1,0 +1,63 @@
+<!--example on javascript-->
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <table style="background-color: burlywood;"align="center">
+        <caption>Students Marks Report</caption>
+        <tr>
+            <td> <label>Roll No</label></td>
+            <td><input type="text" id="textRno"</td>
+        </tr>
+        <tr>
+            <td><label>HTML</label></td>
+            <td><input type="text" id="txtHM"></td>
+        </tr>
+        <tr>
+            <td><label>CSS</label></td>
+            <td><input type="text" id="txtCM"></td>
+        </tr>
+        <tr>
+            <td><label>javascript</label></td>
+            <td><input type="text" id="txtJM"</td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><button onclick="getResult()">Get Result</button></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><output id="total"></output></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><output id="grade"></output></td>
+        </tr>
+    </table>
+      <script>
+          function getResult()
+          {
+              //collected data from UI
+              let hm=parseInt(txtHM.vaue);
+              let cm=parseInt(txtCM.value);
+              let jm=parseInt(txtJM.value);
+              let tot,avg,grd;
+              tot=hm+cm+jm;
+              avg=tot/3;
+              ////min marks in subject - 40, 80
+              if(hm>=40 && cm>=40 && jm>=40)
+              {
+                  if (avg>=80)grd="A+";
+                  else if(avg>=70) grd="A";
+                  else if(avg>=60) grd="B";
+                  else if(avg>=50) grd="C";
+                  else 
+                   grd="D";
+              }
+              else{
+                  grd="Fail";
+              }
+              total.value="total Marks : "+tot;
+              average.value="Average : "+avg;
+              grade.value ="Grade : "+grd;
+          }
+      </script>
+        </body>
+    </body>
+</html>

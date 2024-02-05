@@ -1,0 +1,25 @@
+<!--example on array methods-->
+<html>
+    <h1> Example on shift & unshift</h1>
+    <script>
+        var colors = ["Red","Green","Blue","cyan"];
+        let first =colors.shift(); //it returns 1st 
+
+        let second =colors.shift(); //it returns 2nd 
+        document.write(first + "<br>");
+        document.write(second +"<br>");
+        document.write(colors.length+"<br>");
+        document.write(colors +"<br>");
+
+        //colors= ["blue","cyan"]
+        colors.unshift('yellow'); // it add begining of array
+        len =colors.unshift("black");
+        document.write(len+"<br>");
+        document.write(colors +"<br>");
+    </script>
+</html>
+<!--
+array store & retrive
+LIFO push() & pop()
+FIFO unshift() & shift()
+random index -->
